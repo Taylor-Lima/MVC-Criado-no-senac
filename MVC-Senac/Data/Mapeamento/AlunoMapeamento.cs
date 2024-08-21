@@ -8,14 +8,29 @@ namespace MVC_Senac.Data.Mapeamento
     {
         public void Configure(EntityTypeBuilder<Aluno> builder)
         {
-            builder.ToTable("Alunos");
+            builder.ToTable("Aluno");
 
             builder.HasKey(t => t.Id);
 
-            builder.Property(t => t.Matricula).HasColumnType("varchar(7)");
-            builder.Property(t => t.Nome).HasColumnType("varchar(255)");
+            builder.Property(t => t.Matricula).HasColumnType("varchar(30)");
+            builder.Property(t => t.Nome).HasColumnType("varchar(40)");
             builder.Property(t => t.Cpf).HasColumnType("varchar(14)");
 
         }
     }
 }
+
+//CREATE TABLE Aluno (
+
+//Id INT IDENTITY(1,1) NOT NULL,
+
+//Matricula VARCHAR(30) NOT NULL,
+
+//Nome VARCHAR(40) NOT NULL,
+
+//Cpf VARCHAR(14) NULL
+
+//PRIMARY KEY(Id)
+
+//)
+ 

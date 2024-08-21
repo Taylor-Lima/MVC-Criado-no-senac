@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MVC_Senac.Data;
+using MVC_Senac.Data.Repositorio.Interface;
+using MVC_Senac.Data.Repositorio;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,9 @@ builder.Services.AddControllersWithViews();
 
 var connectionstring = builder.Configuration.GetConnectionString("StringConexao");
 builder.Services.AddDbContext<BancoContexto>(options => options.UseSqlServer(connectionstring));
+
+builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
+
 
 var app = builder.Build();
 

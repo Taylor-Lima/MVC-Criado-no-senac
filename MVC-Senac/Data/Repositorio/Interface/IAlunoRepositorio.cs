@@ -4,6 +4,6 @@ namespace MVC_Senac.Data.Repositorio.Interface
 {
     public interface IAlunoRepositorio
     {
-        List<Aluno> BuscarAlunos();
+        List<Aluno> BuscarAluno();
     }
 }
