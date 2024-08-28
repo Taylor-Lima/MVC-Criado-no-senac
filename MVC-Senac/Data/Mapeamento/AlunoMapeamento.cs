@@ -10,21 +10,20 @@ namespace MVC_Senac.Data.Mapeamento
         {
             builder.ToTable("Aluno");
 
-            builder.HasKey(t => t.Id);
+           builder.HasKey(t => t.Id);
 
-            builder.Property(t => t.Matricula).HasColumnType("varchar(30)");
+            builder.Property(t => t.Matricula).HasColumnType("varchar(10)");
             builder.Property(t => t.Nome).HasColumnType("varchar(40)");
             builder.Property(t => t.Cpf).HasColumnType("varchar(14)");
 
         }
     }
 }
-
 //CREATE TABLE Aluno (
 
 //Id INT IDENTITY(1,1) NOT NULL,
 
-//Matricula VARCHAR(30) NOT NULL,
+//Matricula VARCHAR(10) NOT NULL,
 
 //Nome VARCHAR(40) NOT NULL,
 

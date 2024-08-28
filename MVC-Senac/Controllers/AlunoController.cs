@@ -15,5 +15,9 @@ namespace MVC_Senac.Controllers
             var aluno = _alunoRepositorio.BuscarAluno();
             return View(aluno);
         }
+        public IActionResult AdicionarAluno()
+        {
+            return View();
+        }
     }
 }
