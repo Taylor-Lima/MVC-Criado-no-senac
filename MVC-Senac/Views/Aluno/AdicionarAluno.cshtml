@@ -1,17 +1,23 @@
-﻿<form>
-    <div class="mb-3">
+﻿@model Aluno
+
+
+<form asp-controller="Aluno" asp-action="InserirAluno" method="post">
+
+    <div class="mb-3 col-md-2">
         <label class="form-label">Nome</label>
-        <input type="email" class="form-control">
+        <input type="text" asp-for="Nome" class="form-control">
     </div>
-    <div class="mb-3">
+    <div class="mb-3 col-md-2">
         <label class="form-label">Matrícula</label>
-        <input type="email" class="form-control">
+        <input type="text" asp-for="Matricula" class="form-control">
     </div>
-    <div class="mb-3">
+    <div class="mb-3 col-md-2">
         <label class="form-label">Cpf</label>
-        <input type="email" class="form-control">
+        <input type="text" asp-for="Cpf" class="form-control">
     </div>
 
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+    </div>
 </form>
+

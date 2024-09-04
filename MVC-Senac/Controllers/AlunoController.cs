@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_Senac.Data.Repositorio.Interface;
+using MVC_Senac.Models;
 
 namespace MVC_Senac.Controllers
 {
@@ -18,6 +19,21 @@ namespace MVC_Senac.Controllers
         public IActionResult AdicionarAluno()
         {
             return View();
+        }
+        public IActionResult InserirAluno(Aluno aluno)
+        {
+            try
+            {
+                _alunoRepositorio.InserirAluno(aluno);
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return RedirectToAction("Index");
         }
     }
 }

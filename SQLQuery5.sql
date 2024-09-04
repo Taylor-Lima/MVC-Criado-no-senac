@@ -1,0 +1,1 @@
+﻿insert into Aluno(Nome, Matricula, Cpf)Values('KYLE','1234','100.200.300-40')

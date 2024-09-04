@@ -16,3 +16,6 @@ html {
   margin-bottom: 60px;
   background-color: darkgrey;
 }
+.form-center {
+    align-items: center;
+}
