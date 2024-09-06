@@ -35,5 +35,20 @@ namespace MVC_Senac.Controllers
             }
             return RedirectToAction("Index");
         }
+        public IActionResult Editar(int id)
+        {
+            var aluno = _alunoRepositorio.BuscarId(id);
+            return View(aluno);
+        }
+        public ActionResult EditarAluno(Aluno aluno)
+        {
+            _alunoRepositorio.EditarAluno(aluno);
+            return RedirectToAction("Index");
+        }
+        public IActionResult Excluir(Aluno aluno)
+        {
+            _alunoRepositorio.ExcluirAluno(aluno);
+            return View();
+        }
     }
 }

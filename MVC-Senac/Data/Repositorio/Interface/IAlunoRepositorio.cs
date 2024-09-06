@@ -6,5 +6,9 @@ namespace MVC_Senac.Data.Repositorio.Interface
     {
         List<Aluno> BuscarAluno();
         void InserirAluno(Aluno aluno);
+        Aluno BuscarId(int id);
+        void EditarAluno(Aluno aluno);
+
+        void ExcluirAluno(Aluno aluno);
     }
 }
