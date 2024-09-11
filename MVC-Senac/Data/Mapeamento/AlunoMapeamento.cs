@@ -19,6 +19,7 @@ namespace MVC_Senac.Data.Mapeamento
         }
     }
 }
+
 //CREATE TABLE Aluno (
 
 //Id INT IDENTITY(1,1) NOT NULL,

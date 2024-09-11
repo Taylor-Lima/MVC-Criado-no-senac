@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MVC_Senac.Data;
-using MVC_Senac.Data.Repositorio.Interface;
 using MVC_Senac.Data.Repositorio;
+using MVC_Senac.Data.Repositorio.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,8 +13,7 @@ var connectionstring = builder.Configuration.GetConnectionString("StringConexao"
 builder.Services.AddDbContext<BancoContexto>(options => options.UseSqlServer(connectionstring));
 
 builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
-
-
+builder.Services.AddScoped<IProfessorRepositorio, ProfessorRepositorio>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

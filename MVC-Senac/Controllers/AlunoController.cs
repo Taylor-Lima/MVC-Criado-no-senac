@@ -48,7 +48,7 @@ namespace MVC_Senac.Controllers
         public IActionResult Excluir(Aluno aluno)
         {
             _alunoRepositorio.ExcluirAluno(aluno);
-            return View();
+            return RedirectToAction("index");
         }
     }
 }
