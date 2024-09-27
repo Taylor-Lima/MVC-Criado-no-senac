@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "_LayoutLogin";
+}
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<form class="login" asp-controller="Login" asp-action="Index">
+    <div class="col-md-3">
+        <label for="inputEmail4" class="form-label">Usuário</label>
+        <input type="email" class="form-control" id="inputEmail4">
+        <label for="inputPassword4" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="inputPassword4">
+    </div>
+
+    <div class="login2">
+        @* <button class="btn btn-primary" type="button" asp-controller="Login" asp-action="Index">Entrar</button> *@
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Entrarr</a>
+
+    </div>
+
+</form>

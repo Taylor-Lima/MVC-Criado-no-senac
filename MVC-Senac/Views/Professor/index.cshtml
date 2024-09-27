@@ -1,7 +1,7 @@
 ﻿<h1>@ViewData["Title"]</h1>
-
 @model List<Professor>
 <h1>Cadastro dos Professores</h1>
+<link rel="stylesheet" href="site.css">
 <div>
     <table class="table">
         <thead>
@@ -23,7 +23,7 @@
                 <td>
                     <div class="d-grid gap-2 d-md-block">
                         <a type="submit" class="btn btn-warning" role="button" asp-controller="Professor" asp-action="Editar" asp-route-id="@professor.Id">Editar</a>
-                        <a type="submit" class="btn btn-warning" role="button" asp-controller="Professor" asp-action="ExcluirProfessor" asp-route-id="@professor.Id">Excluir</a>
+                        <a type="submit" class="btn btn-danger" role="button" asp-controller="Professor" asp-action="ExcluirProfessor" asp-route-id="@professor.Id">Excluir</a>
                     </div>
 
                 </td>

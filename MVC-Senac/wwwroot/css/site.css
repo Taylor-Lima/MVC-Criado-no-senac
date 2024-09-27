@@ -14,8 +14,44 @@ html {
 }
 *body {
   margin-bottom: 60px;
-  background-color: darkgrey;
 }
 .form-center {
+    align-items: center;
+}
+.table{
+    background-color: darkslategrey;
+    border-radius: 8px;
+    text-decoration-color: ;
+}
+.bais {
+    text-align: center;
+    
+}
+.Principal{
+    background-color: teal;
+}
+
+.headP{
+    background-color:skyblue;
+}
+.login {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+    border-radius:7px;
+}
+.login2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: column;
+}
+.form-label {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
